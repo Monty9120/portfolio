@@ -4,11 +4,14 @@ body {
 .hide {
   opacity: 0; }
 
+.grey {
+  color: grey; }
+
 a {
   color: white;
   text-decoration: none; }
   a:hover {
-    color: #c80064;
+    color: #1bd68b;
     -webkit-transition: all ease 0.5s;
     transition: all ease 0.5s; }
 
@@ -19,7 +22,9 @@ h1 {
   color: #222;
   font-size: 5em;
   text-align: center;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-family: Georgia;
+  font-weight: 400; }
 
 section {
   margin-left: 20%;
@@ -37,12 +42,15 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  #about .subtitle {
+    color: #1bd68b; }
   #about .blurb {
     margin-top: 2em;
     text-align: center; }
@@ -54,14 +62,13 @@ ul {
     display: flex;
     background-color: #eee; }
     #about .skills .s-item {
-      /*border: 1px grey solid;*/
       padding: 1em;
       margin: 1em;
       text-align: center; }
       #about .skills .s-item .icon {
         font-size: 4em;
         text-align: center;
-        color: #c80064; }
+        color: #1bd68b; }
 
 .wordwrap {
   width: 60%;
@@ -107,7 +114,7 @@ ul {
     .nav .nav-content a {
       color: white; }
       .nav .nav-content a:hover {
-        color: #c80064; }
+        color: #1bd68b; }
     .nav .nav-content .profile-image {
       background-color: white;
       height: 200px;
@@ -129,7 +136,7 @@ ul {
   -ms-flex-pack: center;
   justify-content: center; }
   .filter a {
-    background: #c80064;
+    background: #1bd68b;
     padding: 1em;
     text-align: center;
     margin: 1em;
@@ -141,7 +148,7 @@ ul {
       color: white;
       -webkit-box-shadow: 5px 5px #333;
       box-shadow: 5px 5px #333;
-      background: rgba(180, 0, 100, 0.9);
+      /*background: rgba(180,0,100,0.9);*/
       -webkit-transition: all ease 0.3s;
       transition: all ease 0.3s;
       -webkit-transform: translateY(-2px);
@@ -181,7 +188,7 @@ ul {
       top: 50%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      background-color: #c80064;
+      background-color: #1bd68b;
       padding: 1em;
       color: #eee;
       -webkit-transition: all ease 0.3s;
@@ -193,7 +200,7 @@ ul {
         color: white;
         -webkit-box-shadow: 5px 5px #333;
         box-shadow: 5px 5px #333;
-        background: rgba(180, 0, 100, 0.9);
+        /*background: rgba(180,0,100,0.9);*/
         -webkit-transition: all ease 0.3s;
         transition: all ease 0.3s; }
       .portfolio .p-image .modal-button:active {
@@ -218,7 +225,7 @@ ul {
       .portfolio .p-heading h2 .p-date {
         /*font-size: 15px;*/ }
   .portfolio .p-tags {
-    background-color: #c80064;
+    background-color: #1bd68b;
     padding: 0.3em;
     color: white;
     display: -webkit-box;
@@ -262,12 +269,24 @@ ul {
       .experience-wrap .e-item .e-heading h2 {
         margin: 0; }
     .experience-wrap .e-item .company {
-      color: #c80064; }
+      color: #1bd68b; }
 
-#contact .contact-details {
-  text-align: center; }
-  #contact .contact-details i {
-    color: #c80064; }
+#contact {
+  position: relative;
+  color: white; }
+  #contact h1 {
+    color: white; }
+  #contact .contact-wrap {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    #contact .contact-wrap .contact-details {
+      text-align: center; }
+      #contact .contact-wrap .contact-details i {
+        color: #1bd68b; }
 
 @media only screen and (max-width: 700px) {
   section {
@@ -297,7 +316,7 @@ ul {
       .nav .nav-content a {
         color: white; }
         .nav .nav-content a:hover {
-          color: #c80064; }
+          color: #1bd68b; }
       .nav .nav-content .profile-image {
         background-color: white;
         height: 100px;
@@ -309,7 +328,7 @@ ul {
         font-size: 2em;
         height: 200px; } }
 
-/*- - - - - KEY FRAMES  - - - - - */
+/*-	-	-	-	-	KEY FRAMES 	-	-	-	-	-	*/
 .fade-in-scale {
   -webkit-animation: fade-in-scale 1s ease forwards;
   animation: fade-in-scale 1s ease forwards; }

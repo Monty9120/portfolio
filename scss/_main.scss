@@ -4,6 +4,10 @@ body{
 .hide{
 	opacity: 0;
 }
+.grey{
+	color: grey;
+}
+
 a{
 	color: white;
 	text-decoration: none;
@@ -21,11 +25,15 @@ h1{
 	font-size: 5em;
 	text-align: center;
 	margin-bottom: 10px;
+	font-family: Georgia;
+	font-weight: 400;
 }
 section{
 	margin-left: 20%;
 	min-height: 100vh;
 	color: $primary;
+
+
 }
 ul{
 	list-style-type: none;
@@ -36,8 +44,11 @@ ul{
 		position: relative;
 		z-index: -1;
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		flex-direction: column;
+		.subtitle{
+		color: $secondary;
+	}
 				
 
 		.blurb{
@@ -54,9 +65,10 @@ ul{
 
 		.skills{
 			display: flex;
+			background-color: #eee;
 
 			.s-item{
-				border: 1px grey solid;
+
 				padding: 1em;
 				margin: 1em;
 				text-align: center;
@@ -156,7 +168,7 @@ ul{
 		&:hover{
 			color:white;
 			box-shadow: 5px 5px #333;
-			background: rgba(180,0,100,0.9);
+			/*background: rgba(180,0,100,0.9);*/
 			transition: all ease 0.3s;
 			transform: translateY(-2px);
 
@@ -204,7 +216,7 @@ ul{
 			cursor:pointer;
 			color:white;
 			box-shadow: 5px 5px #333;
-			background: rgba(180,0,100,0.9);
+			/*background: rgba(180,0,100,0.9);*/
 			transition: all ease 0.3s;
 
 			}
@@ -281,11 +293,24 @@ ul{
 }
 
 #contact{
-	.contact-details{
-		text-align: center;
+	position: relative;
+color: white;
+h1{
+	color: white;
+}
+	.contact-wrap{
+		position: absolute;
+		width: 100%;
+		left:50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
 
-		i{
-			color: $secondary;
+		.contact-details{
+			text-align: center;
+
+			i{
+				color: $secondary;
+			}
 		}
 	}
 }
